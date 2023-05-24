@@ -46,6 +46,7 @@ DESC flights;
     
 DESC airlines;
 
+
 SHOW GLOBAL VARIABLES LIKE 'local_infile';
 SET GLOBAL local_infile = true;
  
@@ -117,14 +118,25 @@ GROUP BY airlines.Airline
 ORDER BY delay_fraction DESC;
 
 -- How many fewer flights took place on Thanksgiving in 2015? Compared to total flights in Nov 2015
-
 SELECT CONCAT(Flight_Year, '/', Flight_Month, '/', Flight_Day) AS Flight_date,
 COUNT(*) AS flights_per_day, 
-(COUNT(*) / (SELECT COUNT(*) FROM flights WHERE Flight_Month = 11)) * 100 AS nov_flights_percentage,
-AVG ((COUNT(*) / (SELECT COUNT(*) FROM flights WHERE Flight_Month = 11)) * 100) OVER() AS avg_flight_percentage,
-(COUNT(*) / (SELECT COUNT(*) FROM flights WHERE Flight_Month = 11)) * 100 - 
-AVG ((COUNT(*) / (SELECT COUNT(*) FROM flights WHERE Flight_Month = 11)) * 100) OVER() AS diff_from_avg
+AVG(COUNT(*)) OVER() AS avg_nov_flights,
+COUNT(*) - AVG(COUNT(*)) OVER() as diff_from_avg
 FROM flights
 WHERE Flight_Month = 11 AND Flight_Year = 2015 AND Flight_Day BETWEEN 20 AND 30
 GROUP BY Flight_Day;
 
+-- What is the most popular day of the week for flights in September 2015?
+SELECT DAYNAME(CONCAT(Flight_Year, '/', Flight_Month, '/', Flight_Day)) AS day_of_the_week, 
+COUNT(*) AS num_flights
+FROM flights
+WHERE Flight_Month = 9 AND Flight_Year = 2015
+GROUP BY day_of_the_week
+ORDER BY num_flights DESC;
+
+-- Which month contains the most number of flights?
+SELECT MONTHNAME(CONCAT(Flight_Year, '/', Flight_Month, '/', Flight_Day)) AS month_name, 
+COUNT(*) AS num_flights_per_month
+FROM flights
+GROUP BY month_name
+ORDER BY num_flights_per_month DESC;
