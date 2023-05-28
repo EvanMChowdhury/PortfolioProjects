@@ -99,10 +99,13 @@ GROUP BY airlines.Airline
 ORDER BY delay_fraction DESC;
 
 -- What is the average runway time per airline?
-SELECT airlines.Airline,
+SELECT airlines.Airline, 
+AVG(Elapsed_Time),
+AVG(Air_Time),
 AVG(Elapsed_Time - Air_Time) AS avg_runway_time
 FROM flights
 JOIN airlines ON flights.Airline = airlines.IATA_code
+WHERE Elapsed_Time > 0 AND Air_Time > 0 -- SQL takes null values as 0 min in computing average , while pandas by defaul does not
 GROUP BY airlines.Airline
 ORDER BY avg_runway_time DESC;
 
@@ -123,7 +126,7 @@ COUNT(*) AS flights_per_day,
 AVG(COUNT(*)) OVER() AS avg_nov_flights,
 COUNT(*) - AVG(COUNT(*)) OVER() as diff_from_avg
 FROM flights
-WHERE Flight_Month = 11 AND Flight_Year = 2015 AND Flight_Day BETWEEN 20 AND 30
+WHERE Flight_Month = 11 AND Flight_Year = 2015 -- AND Flight_Day BETWEEN 20 AND 30
 GROUP BY Flight_Day;
 
 -- What is the most popular day of the week for flights in September 2015?
@@ -134,7 +137,7 @@ WHERE Flight_Month = 9 AND Flight_Year = 2015
 GROUP BY day_of_the_week
 ORDER BY num_flights DESC;
 
--- Which month contains the most number of flights?
+-- Which month contains the greatest number of flights?
 SELECT MONTHNAME(CONCAT(Flight_Year, '/', Flight_Month, '/', Flight_Day)) AS month_name, 
 COUNT(*) AS num_flights_per_month
 FROM flights
