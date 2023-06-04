@@ -10,8 +10,7 @@ Currently finished working with the 2015 flights dataset from the Department of 
 Found at https://www.kaggle.com/datasets/usdot/flight-delays\
 \
 And querying this data to answer questions through MySQL and Python/Pandas \
-\
-And visualized my findings using matplotlib, will visualize using Tableau in the near future
+And visualized my findings using matplotlib, will visualize using Tableau in the near future\
 \
 Please reach out if you have interest in discussing more and possibly setting up an interview\
 \
