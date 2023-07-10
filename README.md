@@ -1,16 +1,18 @@
  Hi there! \
 \
-My name\'s Evan Chowdhury and I\'m switching careers from a Chemical Engineer with some coding experience to a Data Analyst/Scientist\
+My name is Evan Chowdhury and I\'m switching careers from a Chemical Engineer with some programming/data visualization experience to a Data Analyst\
 \
-I\'ve spent the last couple months gaining skills in Python/Pandas/MySQL/Tableau and some other python libraries\
+I\'ve spent the last few months gaining skills in Python/Excel/SQL/Pandas/Tableau and some other python libraries\
 \
 This Github repository is designed to showcase these skills through projects\
 \
-Currently finished working with the 2015 flights dataset from the Department of Transportation\
+Finished working with the 2015 flights dataset from the Department of Transportation\
 Found at https://www.kaggle.com/datasets/usdot/flight-delays\
 \
-And querying this data to answer questions through MySQL and Python/Pandas \
-And visualized my findings using matplotlib and Tableau
+And queried this data to answer questions through MySQL and Python/Pandas \
+And visualized my findings using Matplotlib and Tableau\
+\
+Currently gaining skills in excel and completed this in depth course on Pivot Tables: https://www.udemy.com/course/data-analysis-with-excel-pivot-tables/\
 \
 Please reach out if you have interest in discussing more and possibly setting up an interview\
 \
