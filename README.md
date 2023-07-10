@@ -12,7 +12,7 @@ Found at https://www.kaggle.com/datasets/usdot/flight-delays\
 And queried this data to answer questions through MySQL and Python/Pandas \
 And visualized my findings using Matplotlib and Tableau\
 \
-Currently gaining skills in excel and completed this in depth course on Pivot Tables: https://www.udemy.com/course/data-analysis-with-excel-pivot-tables/\
+Currently gaining skills in excel and completed this in depth course on Pivot Tables: https://www.udemy.com/course/data-analysis-with-excel-pivot-tables \
 \
 Please reach out if you have interest in discussing more and possibly setting up an interview\
 \
