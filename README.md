@@ -1,6 +1,6 @@
  Hi there! \
 \
-My name is Evan Chowdhury and I\'m switching careers from a Chemical Engineer with some programming/data visualization experience to a Data Analyst\
+My name is Evan Chowdhury and I\'m looking to switching careers from a Chemical Engineer with some programming/data visualization experience to a Data Analyst\
 \
 I\'ve spent the last few months gaining skills in Python/Excel/SQL/Pandas/Tableau and some other python libraries\
 \
