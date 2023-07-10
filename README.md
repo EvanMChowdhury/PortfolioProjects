@@ -7,8 +7,7 @@ I\'ve spent the last few months gaining skills in Python/Excel/SQL/Pandas/Tablea
 This Github repository is designed to showcase these skills through projects\
 \
 Finished working with the 2015 flights dataset from the Department of Transportation\
-Found at https://www.kaggle.com/datasets/usdot/flight-delays\
-\
+Found at https://www.kaggle.com/datasets/usdot/flight-delays \
 And queried this data to answer questions through MySQL and Python/Pandas \
 And visualized my findings using Matplotlib and Tableau\
 \
