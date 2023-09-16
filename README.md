@@ -7,11 +7,13 @@ I\'ve spent the last few months gaining skills in Python/Excel/SQL/Pandas/Tablea
 This Github repository is designed to showcase these skills through projects\
 \
 Finished working with the 2015 flights dataset from the Department of Transportation\
-Found at https://www.kaggle.com/datasets/usdot/flight-delays \
 And queried this data to answer questions through MySQL and Python/Pandas \
-And visualized my findings using Matplotlib and Tableau\
+And visualized my findings using Matplotlib and Tableau
 \
-Currently gaining skills in excel and completed this in depth course on Pivot Tables: https://www.udemy.com/course/data-analysis-with-excel-pivot-tables \
+Additionally analyzed Video Game Sales data with Excel using Pivot Tables \
+And created a dashboard to visualize findings
+\
+Currently gaining skills in Power BI and working through this course: https://www.udemy.com/course/microsoft-power-bi-up-running-with-power-bi-desktop/  \
 \
 Please reach out if you have interest in discussing more and possibly setting up an interview\
 \
