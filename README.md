@@ -8,10 +8,10 @@ This Github repository is designed to showcase these skills through projects\
 \
 Finished working with the 2015 flights dataset from the Department of Transportation\
 And queried this data to answer questions through MySQL and Python/Pandas \
-And visualized my findings using Matplotlib and Tableau
+And visualized my findings using Matplotlib and Tableau \
 \
 Additionally analyzed Video Game Sales data with Excel using Pivot Tables \
-And created a dashboard to visualize findings
+And created a dashboard to visualize findings \
 \
 Currently gaining skills in Power BI and working through this course: https://www.udemy.com/course/microsoft-power-bi-up-running-with-power-bi-desktop/  \
 \
